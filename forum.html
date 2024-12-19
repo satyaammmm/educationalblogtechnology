@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Community Forum - TechInsight</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      transition: background-color 0.3s;
+    }
+
+    nav a.active,
+    nav a:hover {
+      background-color: #34495e;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .featured-content,
+    .recent-posts {
+      margin-bottom: 20px;
+    }
+
+    .read-more,
+    .comments-link {
+      display: inline-block;
+      background-color: #3498db;
+      color: white;
+      padding: 5px 10px;
+      text-decoration: none;
+      border-radius: 3px;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #2c3e50;
+      color: white;
+      padding: 10px;
+    }
+
+    .forum-thread {
+      border-bottom: 1px solid #ddd;
+      padding: 10px 0;
+    }
+
+    .comment-form form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .comment-form input,
+    .comment-form textarea {
+      width: 100%;
+      padding: 10px;
+    }
+
+    .comment-form button {
+      background-color: #2ecc71;
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="articles.html">Articles</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="interviews.html">Interviews</a>
+        <a href="forum.html" class="active">Community Forum</a>
+        <a href="signup.html">Sign Up</a>
+
+      </nav>
+    </header>
+
+    <main>
+      <h1>Community Discussion Forum</h1>
+
+      <section class="forum-section">
+        <h2>Latest Discussions</h2>
+        <div class="forum-thread">
+          <h3>AI Ethics Debate</h3>
+          <p>
+            Discussing the ethical implications of advanced AI technologies.
+          </p>
+          <div class="thread-details">
+            <span>Started by: TechEnthusiast</span>
+            <span>Replies: 24</span>
+          </div>
+        </div>
+
+        <div class="forum-thread">
+          <h3>Future of Quantum Computing</h3>
+          <p>Exploring potential breakthroughs in quantum technology.</p>
+          <div class="thread-details">
+            <span>Started by: QuantumPioneer</span>
+            <span>Replies: 15</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="comment-form">
+        <h2>Start a New Discussion</h2>
+        <form>
+          <label for="username">Username:</label>
+          <input type="text" id="username" required />
+
+          <label for="topic">Discussion Topic:</label>
+          <input type="text" id="topic" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" required></textarea>
+
+          <button type="submit">Post Discussion</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2024 TechInsight. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
